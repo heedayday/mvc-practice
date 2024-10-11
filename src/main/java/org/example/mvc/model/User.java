@@ -7,6 +7,7 @@ public class User {
     private String userId;
     private String name;
 
+    //생성자
     public User(String userId, String name) {
         this.userId = userId;
         this.name = name;
