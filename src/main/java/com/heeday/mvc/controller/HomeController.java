@@ -7,6 +7,7 @@ import com.heeday.mvc.repository.UserRepository;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+//RequestMapping https://backendcode.tistory.com/227
 @Controller
 public class HomeController {
     @RequestMapping(value = "/", method = RequestMethod.GET)

@@ -3,6 +3,9 @@ package com.heeday.mvc.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+//implements https://ittrue.tistory.com/236
+
 public class ForwardController implements Controller {
     private String forwardUrl;
 
