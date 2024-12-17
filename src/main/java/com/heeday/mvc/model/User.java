@@ -21,6 +21,7 @@ public class User {
         return name;
     }
 
+    //@Overide annotation을 통해서 재정의된 메서드를 확인할 수 있음 https://xonmin.tistory.com/23
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
