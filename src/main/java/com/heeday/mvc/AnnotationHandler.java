@@ -18,6 +18,6 @@ public class AnnotationHandler {
         Constructor<?> defaultConstructor = clazz.getDeclaredConstructor();
         Object targetObject = defaultConstructor.newInstance();
 
-        return (String) targetMethod.invoke(targetObject, request, response);
+        return (String) targetMethod.invoke(targetObject, request, response); //메소드의 실행 결과를 반환 받을 수 있음 https://small-stap.tistory.com/80
     }
 }

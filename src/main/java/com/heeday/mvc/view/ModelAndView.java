@@ -14,6 +14,7 @@ public class ModelAndView {
     public Map<String, Object> getModel() {
         return Collections.unmodifiableMap(model);
     } //Collections https://velog.io/@jyo925/Collections-%ED%81%B4%EB%9E%98%EC%8A%A4
+
     public String getViewName() {
         return (this.view instanceof String ? (String) this.view : null);
     }  //instanceof https://ko.javascript.info/instanceof
