@@ -11,6 +11,6 @@ public class UserCreateController implements Controller {
     @Override
     public String handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         UserRepository.save(new User(request.getParameter("userId"), request.getParameter("name")));
-        return "redirect:/users";
+        return "redirect:/users";  //users라는 클라이언트로 응답을  클라이언트는 users로 다시 요청을 보내게 됨 RequestMappingHandlerMapping /users GET UserListController가 실행이 됨
     }
 }

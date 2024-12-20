@@ -10,7 +10,7 @@ public class HandlerKey {
 
     public HandlerKey(String url, RequestMethod requestMethod) {
         this.url = url;
-        this.requestMethod = requestMethod;
+        this.requestMethod = requestMethod; //get이나 post를 구분할 수 있도록 나누어줌
     }
 
     @Override

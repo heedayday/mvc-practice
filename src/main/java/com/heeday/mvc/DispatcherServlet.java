@@ -31,7 +31,7 @@ public class DispatcherServlet extends HttpServlet {
         RequestMappingHandlerMapping rmhm = new RequestMappingHandlerMapping();
         rmhm.init();
 
-        AnnotationHandlerMapping ahm = new AnnotationHandlerMapping("org.example");
+        AnnotationHandlerMapping ahm = new AnnotationHandlerMapping("com.heeday");
         ahm.initialize();
 
         handlerMappings = List.of(rmhm, ahm);

@@ -13,6 +13,7 @@ public class User {
         this.name = name;
     }
 
+    //lombok을 안쓰고 gettter setter를 사용하는 경우
     public String getUserId() {
         return userId;
     }

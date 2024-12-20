@@ -13,9 +13,9 @@ public class RequestMappingHandlerMapping implements HandlerMapping {
 
     void init() {
 //        mappings.put(new HandlerKey("/", RequestMethod.GET), new HomeController());
-        mappings.put(new HandlerKey("/user/form", RequestMethod.GET), new ForwardController("/user/form"));
+        mappings.put(new HandlerKey("/user/form", RequestMethod.GET), new ForwardController("/user/form")); //처리가 따로없이 바로 해당 /user/form으로 이동해 달라는 Controller
         mappings.put(new HandlerKey("/users", RequestMethod.GET), new UserListController());
-        mappings.put(new HandlerKey("/users", RequestMethod.POST), new UserCreateController());
+        mappings.put(new HandlerKey("/users", RequestMethod.POST), new UserCreateController()); //from.jsp에서 submit을 하면 요청이 됨
 
         mappings.keySet().forEach(path ->
                 logger.info("url path: [{}], controller: [{}]", path, mappings.get(path).getClass()));
