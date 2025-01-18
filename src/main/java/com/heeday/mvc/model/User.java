@@ -22,8 +22,9 @@ public class User {
         return name;
     }
 
-    //@Overide annotation을 통해서 재정의된 메서드를 확인할 수 있음 https://xonmin.tistory.com/23
-    @Override
+    /** <a href="https://xonmin.tistory.com/23">@Overide annotation</a>을 통해서 재정의된 메서드를 확인할 수 있음
+    */
+     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
